@@ -12,22 +12,18 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <nav className="navbar-container">
-        {/* LEFT : Logo only */}
         <div className="navbar-left">
           <Link to="/" className="navbar-logo">
             SkillSwap
           </Link>
         </div>
 
-        {/* RIGHT : everything else */}
         <div className="navbar-right">
-          {/* Navigation links */}
           <div className="navbar-links">
             <Link to="/">Home</Link>
             <Link to="/profile">My Profile</Link>
           </div>
 
-          {/* Logged out */}
           {!user && (
             <>
               <Link to="/login" className="btn btn-outline">
@@ -53,6 +49,7 @@ export default function Navbar() {
               <Tooltip id="user-tooltip" place="bottom" />
 
               <button
+              className="btn btn-primary"
                 type="button"
                  onClick={() => {
                     SignOutFromApp();
