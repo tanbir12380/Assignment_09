@@ -7,6 +7,18 @@ body {
   margin: 0px;
   font-family: "Inter";
   background-color: rgb(238, 238, 238);
+  min-height: 100vh;
+
+}
+
+.root-container{
+    min-height: 100vh;
+    display: flex;
+  flex-direction: column;
+}
+
+.outlet-container{
+  flex:1;
 }
 
 .skill-container{

@@ -5,9 +5,11 @@ import Footer from "./Footer";
 
 const Root = () => {
   return (
-    <div>
+    <div className="root-container">
       <Header></Header>
-      <Outlet></Outlet>
+      <div className="outlet-container">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );

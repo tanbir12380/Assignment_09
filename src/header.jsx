@@ -29,7 +29,7 @@ export default function Navbar() {
               <Link to="/login" className="btn btn-outline">
                 Login
               </Link>
-              <Link to="/signup" className="btn btn-primary">
+              <Link to="/register" className="btn btn-primary">
                 Signup
               </Link>
             </>

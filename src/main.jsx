@@ -11,6 +11,7 @@ import RegisterForm from "./Register";
 import AuthProvider from "./AuthProvider.jsx";
 import SkillDetails from "./SkillDetails.jsx";
 import Profile from "./Profile.jsx";
+import Forget from "./Forget.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path:'profile',
         element:<Profile></Profile>
+      },
+      {
+        path:'forget',
+        element:<Forget></Forget>
       }
     ],
   },
