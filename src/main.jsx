@@ -5,16 +5,36 @@ import App from "./App.jsx";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Root from "./Root.jsx";
+import Home from "./Home";
+import LoginForm from "./Login.jsx";
+import RegisterForm from "./Register";
+import AuthProvider from "./AuthProvider.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    children: [
+      {
+        index: true,
+        element: <Home></Home>,
+      },
+      {
+        path: "login",
+        element: <LoginForm></LoginForm>,
+      },
+      {
+        path: "register",
+        element: <RegisterForm></RegisterForm>,
+      },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

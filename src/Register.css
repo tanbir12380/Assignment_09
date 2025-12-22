@@ -1,0 +1,183 @@
+.register-container-pro {
+  margin: 20px;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+
+.create-club-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 300;
+  flex-direction: column;
+}
+
+.register-card {
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  background-color: white;
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-club-card {
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgb(0, 0, 0);
+  background-color: white;
+  min-width: 35%;
+}
+
+.register-card h2,
+.create-club-card h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 400;
+  font-family: "bebas neue";
+  border-bottom: 1px solid rgba(251, 251, 251, 0.168);
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 14px 12px 14px 12px;
+  font-size: 16px;
+  border: 1px solid rgba(219, 219, 219, 0.802);
+  border-radius: 5px;
+  outline: none;
+  color: rgb(0, 0, 0) !important;
+  box-sizing: border-box;
+}
+
+.file-upload {
+  color: black;
+}
+
+.file-upload:focus {
+  outline: none;
+  border: none;
+}
+
+label {
+  margin-bottom: 5px !important;
+  display: block;
+  margin-top: 15px !important;
+  color: black;
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  padding: 5px;
+  font-size: 26px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s ease;
+  font-family: "bebas neue";
+  margin-top: 20px;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 18px;
+  text-align: left;
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+  color: black;
+}
+
+.login-link a {
+  color: black;
+  text-decoration: underline;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.input-group textarea:focus {
+  outline: none;
+}
+
+.error-text {
+  color: red;
+}
+
+@media (max-width: 1500px) {
+  .register-card {
+    min-width: 30%;
+  }
+  .create-club-card {
+    min-width: 38%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .register-card {
+    min-width: 35%;
+  }
+  .create-club-card {
+    min-width: 42%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .register-card {
+    min-width: 38%;
+  }
+  .create-club-card {
+    min-width: 47%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .register-card {
+    min-width: 42%;
+  }
+  .create-club-card {
+    min-width: 52%;
+  }
+}
+
+@media (max-width: 900px) {
+  .register-card {
+    min-width: 50%;
+  }
+  .create-club-card {
+    min-width: 57%;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    width: 100%;
+  }
+  .create-club-card {
+    width: 100%;
+  }
+}

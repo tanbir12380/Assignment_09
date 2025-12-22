@@ -1,17 +1,13 @@
-import { useState } from "react";
+
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import "./Navbar.css";
 import { Link } from "react-router";
+import { useContext } from "react";
+import { AuthContext } from "./AuthContext";
 
 export default function Navbar() {
-  // mock user state (replace later with real auth)
-  const [user, setUser] = useState({
-    displayName: "Tanbir",
-    photoURL: "https://i.pravatar.cc/40",
-  });
-
-  // const [user, setUser] = useState(null); // logged-out state
+  const { user, SignOutFromApp } = useContext(AuthContext);
 
   return (
     <header className="navbar">
@@ -47,19 +43,20 @@ export default function Navbar() {
           {user && (
             <div className="navbar-user">
               <img
-                src={user.photoURL}
+                src={user?.photoURL}
                 alt="avatar"
                 className="avatar"
                 data-tooltip-id="user-tooltip"
-                data-tooltip-content={user.displayName}
+                data-tooltip-content={user?.displayName}
               />
 
               <Tooltip id="user-tooltip" place="bottom" />
 
               <button
                 type="button"
-                className="btn btn-danger"
-                onClick={() => setUser(null)}
+                 onClick={() => {
+                    SignOutFromApp();
+                  }}
               >
                 Logout
               </button>
