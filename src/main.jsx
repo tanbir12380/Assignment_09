@@ -10,6 +10,7 @@ import LoginForm from "./Login.jsx";
 import RegisterForm from "./Register";
 import AuthProvider from "./AuthProvider.jsx";
 import SkillDetails from "./SkillDetails.jsx";
+import Profile from "./Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:'skillDetails/:id',
         element:<SkillDetails></SkillDetails>
+      },
+      {
+        path:'profile',
+        element:<Profile></Profile>
       }
     ],
   },
