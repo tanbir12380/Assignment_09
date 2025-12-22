@@ -1,0 +1,101 @@
+.navbar {
+  margin: 0 auto;
+  padding: 12px 24px;
+  background-color: #c40000;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "bebas neue";
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #000000;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.btn-outline:hover {
+  background: #f3f4f6;
+  color: black;
+}
+
+.btn-primary {
+  background: #111827;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #000000;
+}
+
+.btn-danger {
+  border: 1px solid #ef4444;
+  background: transparent;
+  color: #ef4444;
+}
+
+.btn-danger:hover {
+  background: #fee2e2;
+}
