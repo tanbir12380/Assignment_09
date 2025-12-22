@@ -1,0 +1,122 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Comprehensive beginner-friendly acoustic guitar lessons designed for those with little to no prior experience. The sessions cover essential chords, basic strumming patterns, finger placement, rhythm practice, and simple songs to help learners build confidence and musical foundation step by step.",
+    "image": "https://images.unsplash.com/photo-1536594527669-2f555de54e95?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Interactive one-on-one spoken English sessions aimed at improving fluency, pronunciation, and everyday communication skills. Ideal for non-native speakers who want to gain confidence in conversations, interviews, and social interactions through guided practice.",
+    "image": "https://images.unsplash.com/photo-1686771416537-bf4a4f263d88?q=80&w=1142&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Basic Web Development",
+    "providerName": "Tanvir Ahmed",
+    "providerEmail": "tanvir@skillswap.com",
+    "price": 25,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Hands-on introduction to web development covering HTML structure, CSS styling, and basic JavaScript logic. Learners will build simple, responsive web pages while understanding how websites work behind the scenes and gaining a strong foundation for further learning.",
+    "image": "https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Technology"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Nina Patel",
+    "providerEmail": "nina@skillswap.com",
+    "price": 15,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Beginner-level yoga sessions focused on flexibility, balance, breathing techniques, and stress relief. The classes are gentle, well-paced, and suitable for all fitness levels, helping participants improve physical well-being and mental relaxation.",
+    "image": "https://plus.unsplash.com/premium_photo-1669446008868-da944a2cfcf5?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Health & Fitness"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Photography Basics",
+    "providerName": "Rahul Sen",
+    "providerEmail": "rahul@skillswap.com",
+    "price": 30,
+    "rating": 4.5,
+    "slotsAvailable": 2,
+    "description": "An introductory photography course covering camera settings, lighting principles, composition rules, and practical shooting techniques. Perfect for beginners who want to take better photos using DSLR or mirrorless cameras and understand visual storytelling.",
+    "image": "https://cdn.pixabay.com/photo/2023/04/06/09/39/camera-7903435_1280.jpg",
+    "category": "Photography"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Math Tutoring (High School)",
+    "providerName": "Emily Brown",
+    "providerEmail": "emily@skillswap.com",
+    "price": 18,
+    "rating": 4.4,
+    "slotsAvailable": 5,
+    "description": "Personalized math tutoring sessions for high school students focusing on algebra, geometry, and core problem-solving techniques. Lessons are tailored to individual learning styles, helping students strengthen fundamentals and improve exam performance.",
+    "image": "https://plus.unsplash.com/premium_photo-1724800663657-3e57bf4f622c?q=80&w=726&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Education"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Digital Marketing Fundamentals",
+    "providerName": "Hasan Ali",
+    "providerEmail": "hasan@skillswap.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 3,
+    "description": "A beginner-friendly overview of digital marketing concepts including social media strategy, basic SEO, content creation, and online branding. Ideal for students, entrepreneurs, or professionals looking to understand how businesses grow online.",
+    "image": "https://media.istockphoto.com/id/2166193783/photo/data-analytics-team-meeting-at-night.jpg?s=2048x2048&w=is&k=20&c=eInh_RcGTu-RonoC1SdHBbr-nyjCxQqiWFK54qJ9f1A=",
+    "category": "Business"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Cooking Bengali Cuisine",
+    "providerName": "Farzana Akter",
+    "providerEmail": "farzana@skillswap.com",
+    "price": 22,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Step-by-step cooking sessions focused on traditional Bengali dishes, spices, and techniques. Participants will learn authentic recipes, ingredient preparation, and cultural cooking tips to recreate homemade meals with rich flavors.",
+    "image": "https://plus.unsplash.com/premium_photo-1687697861242-03e99059e833?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 9,
+    "skillName": "Beginner Python Programming",
+    "providerName": "Arif Khan",
+    "providerEmail": "arif@skillswap.com",
+    "price": 28,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "A practical introduction to Python programming covering variables, data types, loops, conditions, and simple projects. Designed for absolute beginners who want to build logical thinking skills and start their journey in programming.",
+    "image": "https://wallup.net/wp-content/uploads/2017/11/22/408866-code-python-computer-Python_programming-programming_language.jpg",
+    "category": "Technology"
+  },
+  {
+    "skillId": 10,
+    "skillName": "Public Speaking Coaching",
+    "providerName": "Jessica Lee",
+    "providerEmail": "jessica@skillswap.com",
+    "price": 40,
+    "rating": 4.8,
+    "slotsAvailable": 2,
+    "description": "Professional public speaking coaching focused on improving confidence, voice modulation, body language, and presentation structure. Ideal for students and professionals who want to communicate ideas clearly and speak effectively in front of an audience.",
+    "image": "https://plus.unsplash.com/premium_photo-1679547202989-91a385a0de17?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Personal Development"
+  }
+]

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "./Register.css";
-import Header from "./Header";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2";

@@ -9,6 +9,7 @@ import Home from "./Home";
 import LoginForm from "./Login.jsx";
 import RegisterForm from "./Register";
 import AuthProvider from "./AuthProvider.jsx";
+import SkillDetails from "./SkillDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         path: "register",
         element: <RegisterForm></RegisterForm>,
       },
+      {
+        path:'skillDetails/:id',
+        element:<SkillDetails></SkillDetails>
+      }
     ],
   },
 ]);
