@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./header";
 import { Outlet } from "react-router";
 import Footer from "./Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Root = () => {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <div className="root-container">
       <Header></Header>

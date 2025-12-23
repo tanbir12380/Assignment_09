@@ -14,7 +14,7 @@ const Skill = ({ skill }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="skill-card">
+    <div data-aos="fade-up" className="skill-card">
       <img src={image} alt={skillName} className="skill-image" />
 
       <div className="skill-content">

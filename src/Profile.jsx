@@ -2,12 +2,22 @@ import React, { useContext, useRef } from "react";
 import "./Profile.css";
 import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Profile = () => {
   const {user,updateUsersDetails}= useContext(AuthContext);
    const dialogRef = useRef();
   return (
     <div className="profile-wrapper">
+
+         <Toaster   position="top-center"  toastOptions={{
+    success: {
+      duration: 3000,
+      iconTheme: {
+        primary: 'green',
+      },
+    },
+  }} />
 
 <dialog ref={dialogRef} className="skill-dialog">
   <form
@@ -21,12 +31,7 @@ const Profile = () => {
 
               updateUsersDetails(user, name, photo)
                 .then(() => {
-      Swal.fire({
-        icon: "success",
-        title: "Profile is updated",
-        showConfirmButton: false,
-        timer: 1500
-      });
+   toast.success('Your profile is updated successfully !');
             dialogRef.current.close();
                 })
                 .catch((error) => {

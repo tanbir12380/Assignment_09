@@ -19,7 +19,7 @@ const TopProviders = () => {
 
       <div className="providers-grid">
         {providers.map((provider) => (
-          <div key={provider.id} className="provider-card">
+          <div data-aos="zoom-in" key={provider.id} className="provider-card">
             <img src={provider.image} alt={provider.name} />
 
             <div className="provider-info">

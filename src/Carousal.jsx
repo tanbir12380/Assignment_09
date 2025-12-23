@@ -40,9 +40,9 @@ const Hero = () => {
     modules={[Autoplay, Pagination]}
     className="hero-swiper"
   >
-    {images.map((img, idx) => (
-      <SwiperSlide key={idx}>
-        <img src={img} alt={`Slide ${idx + 1}`} className="hero-slide" />
+    {images.map((img, i) => (
+      <SwiperSlide key={i}>
+        <img src={img} className="hero-slide" />
       </SwiperSlide>
     ))}
   </Swiper>

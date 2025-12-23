@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import "./SkillDetails.css";
 import Swal from "sweetalert2";
+import toast, { Toaster } from 'react-hot-toast';
 
 const SkillDetails = () => {
   const { id } = useParams();
@@ -28,6 +29,14 @@ const SkillDetails = () => {
 
   return (
     <div className="details-container">
+       <Toaster   position="top-center"  toastOptions={{
+    success: {
+      duration: 3000,
+      iconTheme: {
+        primary: 'green',
+      },
+    },
+  }} />
       <button className="back-btn" onClick={() => navigate(-1)}>
         ← Back
       </button>
@@ -40,12 +49,7 @@ const SkillDetails = () => {
     className="dialog-box"
     onSubmit={(e) => {
       e.preventDefault();
-      Swal.fire({
-        icon: "success",
-        title: "Request Submitted!",
-        showConfirmButton: false,
-        timer: 1500
-      });
+toast.success('Session is booked successfully !');
       dialogRef.current.close();
     }}
   >

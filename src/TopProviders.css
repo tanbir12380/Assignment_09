@@ -60,3 +60,22 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+
+@media (max-width: 1400px) {
+  .providers-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .providers-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .providers-grid{
+    grid-template-columns: 1fr;
+  }
+}

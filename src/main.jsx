@@ -14,6 +14,7 @@ import Profile from "./Profile.jsx";
 import Forget from "./Forget.jsx";
 import PrivateRoute from "./PrivateRoute.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

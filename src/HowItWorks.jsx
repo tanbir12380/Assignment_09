@@ -38,8 +38,8 @@ export default function HowItWorks() {
       </p>
 
       <div className="how-grid">
-        {steps.map((step) => (
-          <div key={step.id} className="how-card">
+        {steps.map((step,i) => (
+          <div  data-aos={i % 2 === 0 ? "flip-left" : "flip-right"} key={step.id} className="how-card">
             <div className="how-icon">{step.icon}</div>
             <h3>{step.title}</h3>
             <p>{step.desc}</p>
