@@ -1,10 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Register.css";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2";
+import { IoIosEye } from "react-icons/io";
+import { IoIosEyeOff } from "react-icons/io";
 
 export default function RegisterForm() {
+      const [hidePass, setHidePass]= useState(true);
   const {
     createUser,
     updateUsersDetails,
@@ -133,7 +136,35 @@ export default function RegisterForm() {
 
           <div className="input-group">
             <label>Password</label>
-            <input type="password" name="password" required />
+<div style={{
+  display:'flex',
+  backgroundColor:'rgba(255, 255, 255, 1)',
+  borderRadius:'5px',
+  alignItems:'center',
+  padding:'0px 10px 0px 0px',
+  gap:'10px',
+  border:'1px solid rgba(165, 165, 165, 0.8)'
+}}>
+              <input
+              style={{
+                backgroundColor:'none',
+                border:'none',
+                outline:'none'
+              }}
+              type={hidePass ? "password" : "text"}
+              name="password"
+              required
+            />
+
+            {
+              hidePass ? <IoIosEyeOff size={24} style={{color:'black', cursor:'pointer'}} onClick={()=>{
+                setHidePass(!hidePass)
+              }}></IoIosEyeOff> : <IoIosEye size={24} style={{color:'black', cursor:'pointer'}} onClick={()=>{
+                setHidePass(!hidePass)
+              }}></IoIosEye>
+            }
+
+</div>
           </div>
 
           <button className="register-btn">Sign Up</button>

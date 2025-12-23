@@ -3,7 +3,8 @@ import { AuthContext } from "./AuthContext";
 import { Navigate, useLocation } from "react-router";
 
 const PrivateRoute = ({ children }) => {
-  const { user, loading, setUserLocation } = useContext(AuthContext);
+  const { user, loading, setUserLocation } =
+    useContext(AuthContext);
 
   const location = useLocation();
 
@@ -12,8 +13,6 @@ const PrivateRoute = ({ children }) => {
       setUserLocation(location.pathname);
     }
   }, [user, loading, location.pathname, setUserLocation]);
-
-  console.log("from private Route", location);
 
   if (loading) {
     return (

@@ -1,36 +1,54 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Register.css";
 import { Link } from "react-router";
 import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2";
 
 export default function Forget() {
-  const { resetYourPassword } = useContext(AuthContext);
-  const [email, setEmail] = useState("");
+  const { resetYourPassword, userEmailReset, setUserEmailReset} = useContext(AuthContext);
 
-  const handleReset = (e) => {
-    e.preventDefault();
 
-    resetYourPassword(email)
-      .then(() => {
+  const handleReset = async (e) => {
+
         Swal.fire({
-          icon: "success",
-          title: "Reset Link Sent!",
+          title: "Processing...",
+          text: "Please wait",
           allowOutsideClick: false,
-          text: "Please check your email to reset your password.",
-          showConfirmButton: false,
-          timer: 2000,
+          didOpen: () => Swal.showLoading(),
         });
-        setEmail(""); 
-      })
-      .catch((error) => {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: error.message.slice(9),
-        });
-      });
-  };
+
+  e.preventDefault();
+
+  const email = e.target.email.value;
+
+  try {
+    await resetYourPassword(email);
+      Swal.close();
+    Swal.fire({
+      icon: "success",
+      title: "Reset Link Sent!",
+      allowOutsideClick: false,
+      text: "Please check your email to reset your password.",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+
+    setUserEmailReset(null);
+
+    setTimeout(() => {
+      window.open("https://mail.google.com", "_blank");
+    }, 2500); 
+
+  } catch (error) {
+          Swal.close();
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: error.message.slice(9),
+    });
+  }
+};
+
 
   return (
     <div className="register-container-pro">
@@ -42,10 +60,10 @@ export default function Forget() {
             <label>Email</label>
             <input
               type="email"
+              name="email" 
               placeholder="Enter your email"
-              value={email}
+              defaultValue={userEmailReset ? userEmailReset : "" }
               required
-              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 

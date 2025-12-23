@@ -63,7 +63,7 @@
   width: 100%;
   padding: 14px 12px 14px 12px;
   font-size: 16px;
-  border: 1px solid rgba(219, 219, 219, 0.802);
+  border: 1px solid rgba(165, 165, 165, 0.8);
   border-radius: 5px;
   outline: none;
   color: rgb(0, 0, 0) !important;
@@ -127,6 +127,16 @@ label {
 .error-text {
   color: red;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000000;     
+  -webkit-box-shadow: 0 0 0 1000px #fff inset; 
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 
 @media (max-width: 1500px) {
   .register-card {

@@ -1,12 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Register.css";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2";
+import { IoIosEye } from "react-icons/io";
+import { IoIosEyeOff } from "react-icons/io";
 
 export default function LoginForm() {
-  const { SignInUser, signInWithGoogle, userLocationS, setUserLocation } =
+  const { SignInUser, signInWithGoogle, userLocationS, setUserLocation, setUserEmailReset } =
     useContext(AuthContext);
+
+    const [hidePass, setHidePass]= useState(true);
 
   const navigate = useNavigate();
 
@@ -91,17 +95,42 @@ export default function LoginForm() {
 
           <div className="input-group">
             <label>Email</label>
-            <input type="email" name="email" required />
+            <input onChange={(e)=>{
+              setUserEmailReset(e.target.value);
+            }} type="email" name="email" required />
           </div>
 
           <div className="input-group">
             <label>Password</label>
-            <input
-              type="password"
+<div style={{
+  display:'flex',
+  backgroundColor:'rgba(255, 255, 255, 1)',
+  borderRadius:'5px',
+  alignItems:'center',
+  padding:'0px 10px 0px 0px',
+  gap:'10px',
+  border:'1px solid rgba(165, 165, 165, 0.8)'
+}}>
+              <input
+              style={{
+                backgroundColor:'none',
+                border:'none',
+                outline:'none'
+              }}
+              type={hidePass ? "password" : "text"}
               name="password"
               required
-              style={{ marginBottom: "0px" }}
             />
+
+            {
+              hidePass ? <IoIosEyeOff size={24} style={{color:'black', cursor:'pointer'}} onClick={()=>{
+                setHidePass(!hidePass)
+              }}></IoIosEyeOff> : <IoIosEye size={24} style={{color:'black', cursor:'pointer'}} onClick={()=>{
+                setHidePass(!hidePass)
+              }}></IoIosEye>
+            }
+
+</div>
           </div>
 
           <p
@@ -116,7 +145,7 @@ export default function LoginForm() {
           </button>
 
           <p className="login-link">
-            Don't have any account? <Link to="/register">Register</Link>
+            Don't have any account? <Link to="/register">SignUp</Link>
           </p>
 
           <button

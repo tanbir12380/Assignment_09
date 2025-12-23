@@ -12,6 +12,7 @@ import AuthProvider from "./AuthProvider.jsx";
 import SkillDetails from "./SkillDetails.jsx";
 import Profile from "./Profile.jsx";
 import Forget from "./Forget.jsx";
+import PrivateRoute from "./PrivateRoute.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,11 +33,11 @@ const router = createBrowserRouter([
       },
       {
         path:'skillDetails/:id',
-        element:<SkillDetails></SkillDetails>
+        element:<PrivateRoute><SkillDetails></SkillDetails></PrivateRoute>
       },
       {
         path:'profile',
-        element:<Profile></Profile>
+        element:<PrivateRoute><Profile></Profile></PrivateRoute>
       },
       {
         path:'forget',
