@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Skill from './Skill';
+import "./Skill.css"
 
 const ShowSkills = () => {
 
@@ -16,14 +17,19 @@ const ShowSkills = () => {
 
   })
 
+        
+
   return (
-    <div className='skill-container'>
+  <div>
+    <h2 className='skill-header'>Start Learning Something New Today</h2>
+      <div className='skill-container'>
       {
         skills.map((skill)=>{
           return  <Skill skill={skill} ></Skill>
         })
       }
     </div>
+  </div>
   );
 };
 

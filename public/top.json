@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "maximilian schwarzmüller",
+    "skill": "Full Stack Mentor",
+    "rating": 4.9,
+    "students": 12000,
+    "image": "https://pbs.twimg.com/profile_images/1745781333400399872/MN7Wm4Ya_400x400.jpg"
+  },
+  {
+    "id": 2,
+    "name": "jonas schmedtmann",
+    "skill": "Spoken English Coach",
+    "rating": 4.8,
+    "students": 95000,
+    "image": "https://archive.org/download/node.js-express-mongo-db-more-the-complete-bootcamp-2021/node.js-express-mongo-db-more-the-complete-bootcamp-2021.thumbs/[TutsNode.com]%20-%20Node.js,%20Express,%20MongoDB%20&%20More%20-%20The%20Complete%20Bootcamp%202021/01%20Welcome,%20Welcome,%20Welcome!/001%20Course%20Structure%20and%20Projects_000386.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Daniel Lee",
+    "skill": "Guitar Instructor",
+    "rating": 5.0,
+    "students": 160,
+    "image": "https://plus.unsplash.com/premium_photo-1661346366791-8e30b8b1e05a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 4,
+    "name": "Chen Yuting",
+    "skill": "Yoga Trainer",
+    "rating": 4.9,
+    "students": 14000,
+    "image": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]

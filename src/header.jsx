@@ -46,7 +46,9 @@ export default function Navbar() {
                 data-tooltip-content={user?.displayName}
               />
 
-              <Tooltip id="user-tooltip" place="bottom" />
+              <Tooltip style={{
+                zIndex:'999'
+              }} id="user-tooltip" place="bottom" />
 
               <button
               className="btn btn-primary"

@@ -1,0 +1,62 @@
+.top-rated-section {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin: 10px 0 50px;
+}
+
+.providers-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+.provider-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.provider-card:hover {
+  transform: translateY(-6px);
+}
+
+.provider-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.provider-info {
+  padding: 16px;
+}
+
+.provider-info h4 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.provider-info .skill {
+  color: #777;
+  font-size: 14px;
+}
+
+.provider-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}

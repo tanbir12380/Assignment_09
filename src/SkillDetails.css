@@ -173,3 +173,10 @@
 .dialog-close:hover {
   background-color: #d1d5db;
 }
+
+
+@media (max-width:768px){
+  .details-card{
+    flex-direction: column;
+  }
+}
