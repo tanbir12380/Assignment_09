@@ -1,0 +1,57 @@
+.how-section {
+width:80%;
+margin: 50px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-family: "bebas neue";
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.how-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+.how-icon {
+  font-size: 36px;
+  color: var(--bg-primary);
+  margin-bottom: 16px;
+}
+
+.how-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.how-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
